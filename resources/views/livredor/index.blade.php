@@ -13,8 +13,8 @@ $des = "Nous nous chargeons d&#8217;envoyer votre bon cadeau.";
         </div>
     @endif
     <!-- les boutons d'actions -->
-    <div class="container">
-        <a class="btn btn-primary col-2 text-center mb-5 " href="#MonCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un commentaire</a>
+    <div class="container col-12 mx-auto">
+        <a class="btn btn-primary mw-lg-20 col-xs-8 mb-5 " href="#MonCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="MonCollapse">Ajouter un commentaire</a>
     </div>
     <!-- le contenu masqué -->
     {{ $actives->links() }}
