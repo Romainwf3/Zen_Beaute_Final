@@ -27,10 +27,8 @@ if (!isset($des)) {
 <!DOCTYPE html>
 <html lang="fr">
 
-
 <!-- Re captach module -->
 @yield('extra-js')
-
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +53,6 @@ if (!isset($des)) {
     <script src="https://kit.fontawesome.com/0febd544a9.js"></script>
     <style>
         @media print {}
-
         @media(max-width: 768px) {}
     </style>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -70,12 +67,10 @@ if (!isset($des)) {
     <!-- CSS commun à toutes les pages -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}" />
     @yield('style')
-
     {{-- jQuery --}}
     <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- import pour le javascript commun à toutes les pages (pour le slider pub, le spinner de chargement...) -->
     <script src="{{ asset('js/main.js') }}"></script>
 </head>
@@ -95,14 +90,14 @@ if (!isset($des)) {
                 <!-- menu -->
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="{{ route('home') }}"><img class="img-fluid"
-                            src="{{ asset('img/zenetbeaute.png') }}" title="Accueil Zen et beaut&eacute;"
-                            alt="Accueil Zen et beaute"></a>
+                        src="{{ asset('img/zenetbeaute.png') }}" title="Accueil Zen et beaut&eacute;"
+                        alt="Accueil Zen et beaute">
+                    </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse policenature" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
@@ -133,17 +128,17 @@ if (!isset($des)) {
                                 </div>
                             </li>
                             <li class="nav-iteM">
-                                <a class="nav-link linkStyle2" href="{{ route('contact') }}"
-                                    title="Contacter Zen et Beaut&eacute;">Contact</a>
-                            </li>
-                            <li class="nav-iteM">
                                 <a class="nav-link linkStyle2 policenature"
-                                    title="La galerie photos de Zen et Beaut&eacute;"
-                                    href="{{ route('portfolio') }}" />Galerie</a>
+                                title="La galerie photos de Zen et Beaut&eacute;"
+                                href="{{ route('portfolio') }}" />Galerie</a>
                             </li>
                             <li class="nav-iteM">
                                 <a class="nav-link linkStyle2 policenature" href="{{ route('livredor.index') }}"
-                                    title="Espace membre Zen et Beaut&eacute;">Livre D'or</a>
+                                title="Espace membre Zen et Beaut&eacute;">Livre D'or</a>
+                            </li>
+                            <li class="nav-iteM">
+                                <a class="nav-link linkStyle2" href="{{ route('contact') }}"
+                                    title="Contacter Zen et Beaut&eacute;">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -194,7 +189,6 @@ if (!isset($des)) {
                             <hr class="clearfix w-100 d-md-none">
                             <div class="col-md-3 mx-auto">
                                 <h5 class="font-weight-bold text-uppercase mt-3 mb-4 h4">CONTACT</h5>
-
                                 <ul class="list-unstyled couleurbleu">
                                     <li>
                                         <p class="policesnippet2">Par Téléphone <br>
@@ -203,9 +197,9 @@ if (!isset($des)) {
                                     </li>
                                     <li>
                                         <a href="https://www.facebook.com/Zen-ET-Beaute-246867908832349/"><img
-                                                class="logofooter1" src="{{ asset('img/logofacebook.jpg') }}"
-                                                alt="Facebook Zen et Beauté"
-                                                title="La page Facebook de Zen et Beauté"></a>
+                                            class="logofooter1" src="{{ asset('img/logofacebook.jpg') }}"
+                                            alt="Facebook Zen et Beauté"
+                                            title="La page Facebook de Zen et Beauté"></a>
                                     </li>
                                     <br>
                                     <li>
@@ -253,9 +247,17 @@ if (!isset($des)) {
                             </div>
                         </div>
                     </div>
-                    <div class="text-center py-3 policesnippet2">© 2019 Design :
-                        <a href="https://www.360-visio.fr" class="policesnippet2 linkStyle2"
-                            title="Visitez le site de 360 Visio">360 Visio</a>
+                    <div class="text-center py-3 policesnippet2">© 2019 WebForce3 Team :
+                        <a target="_blank" href="https://www.linkedin.com/in/romain-verwaerde/"><i class="fab fa-linkedin"></i>
+                            Romain
+                        </a> |
+                        <a target="_blank" href="https://www.linkedin.com/in/joseph-astor/"><i class="fab fa-linkedin"></i>
+                            Joseph
+                        </a> |
+                        <a target="_blank" href="https://www.linkedin.com/in/enguerrand-louis-1927b4127/"><i class="fab fa-linkedin"></i>
+                            Enguerrand
+                        </a>
+                        <a class="ml-5" href="{{ route('gate') }}"><i style="color:orange" class="fas fa-user-cog"></i></a>
                     </div>
                 </footer>
             </div>
@@ -264,7 +266,6 @@ if (!isset($des)) {
     @yield('script')
     <script type="text/javascript">
         $(document).ready(function() {
-
             $('.btn').click(function() {
                 var service = encodeURIComponent($(this).val()); // on sécurise les données
                 console.log(service);
@@ -273,9 +274,7 @@ if (!isset($des)) {
                     type: "POST", // la requête est de type POST
                     data: "service=" + service // et on envoie nos données
                 });
-
             });
-
         });
     </script>
 </body>

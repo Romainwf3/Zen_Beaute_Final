@@ -18,7 +18,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $actives = Comment::where('active', 1)->orderBy('created_at', 'DESC')->get();
+        $actives = Comment::where('active', 1)->orderBy('created_at', 'DESC')->paginate(10);
 
         return view('livredor.index',[
             'actives' => $actives,

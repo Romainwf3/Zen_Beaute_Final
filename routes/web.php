@@ -32,7 +32,6 @@ Route::get('/ongles', 'CategorieController@ongles')->name('ongles');
 Route::get('/soins', 'CategorieController@soins')->name('soins');
 Route::get('/uv', 'CategorieController@uv')->name('uv');
 
-
 // Route pour le formulaire de contact
 Route::get('/contact', 'ContactController@create')->name('contact');
 Route::post('/contact', 'ContactController@store');
@@ -52,7 +51,9 @@ Route::middleware('auth')->group(function() {
     Route::post('store', 'Admin\AdminController@store')->name('admin.store'); // Sauvegarde de l'article
     Route::get('admin/categorie/{slug}', 'Admin\AdminController@show')->name('admin.show');
     Route::get('admin/categories', 'Admin\AdminController@index')->name('admin.index');
-    Route::resource('admin', 'Admin\AdminController');
+    Route::resource('admin', 'Admin\AdminController')->except([
+        'destroy'
+    ]);
     Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 });
 
@@ -63,8 +64,6 @@ Route::put('/livredor/{id}/update', 'Admin\CommentController@update')->name('liv
 Route::get('/livredor/destroy/{id}', 'Admin\CommentController@destroy')->name('livredor.destroy');
 Route::get('/livredor/create', 'Admin\CommentController@create')->name('livredor.create');
 Route::put('/livredor/update/{id}', 'Admin\CommentController@onComment')->name('livredor.update');
-
-
 Route::put('/livredor/{id}/update', 'Admin\CommentController@showComment')->name('livredor.showComment');
 });
 

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Modeles\Service;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class CategorieController extends Controller
 {

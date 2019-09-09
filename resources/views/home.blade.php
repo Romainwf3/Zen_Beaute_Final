@@ -24,7 +24,6 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
 <html lang="fr">
 
 <head>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- CSRF Token -->
@@ -44,10 +43,8 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
     <meta name="rating" content="general">
     <meta name="Author" content="<?php echo $signature; ?>">
     <link rel="canonical" title="<?php echo $tit; ?>" href="<?php echo $http; ?>">
-
     <style>
         @media print {}
-
         @media(max-width: 768px) {}
     </style>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -66,12 +63,9 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
     <!-- CSS pour les cartes animées -->
     <link rel="stylesheet" href="{{ asset('css/cards.css') }}" />
     <script src="https://kit.fontawesome.com/0febd544a9.js"></script>
-
-
 </head>
 
 <body>
-
     <!-- Spinner pour le chargement de la page -->
     <div id="spinner">
         <div id="loader">
@@ -107,7 +101,6 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse policenature" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
@@ -137,7 +130,6 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                                     title="Les UV de Zen et Beaut&eacute;">Séance UV</a>
                             </div>
                         </li>
-
                         <li class="nav-iteM">
                             <a class="nav-link linkStyle2 policenature"
                                 title="La galerie photos de Zen et Beaut&eacute;"
@@ -147,11 +139,10 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                             <a class="nav-link linkStyle2 policenature" href="{{ route('livredor.index') }}"
                                 title="Espace membre Zen et Beaut&eacute;">Livre D'or</a>
                         </li>
-
                         <li class="nav-iteM">
-                                <a class="nav-link linkStyle2" href="{{ route('contact') }}"
-                                    title="Contacter Zen et Beaut&eacute;">Contact</a>
-                            </li>
+                            <a class="nav-link linkStyle2" href="{{ route('contact') }}"
+                                title="Contacter Zen et Beaut&eacute;">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -159,19 +150,23 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
         <!-- classe ombrepage pour l'effet d'ombre dans la totalité de la page -->
         <div class="ombrepage">
             <main>
-
                 <br />
                 <div class="containter col-lg-10 col-md-10 col-sm-12 mx-auto">
                     <p class="text-center policesnippet">
                         Bienvenue sur le site de <img src="./img/zen_p14.png" width="114" height="12"
                             alt="Selon votre goût soins du corp épilations massage hamman bronzage"
-                            title="Selon votre goût soins du corp épilations massage hamman bronzage">.</p>
-                    <p class="text-center policesnippet"> Selon votre goût : soins du corps épilations massage hamman
-                        bronzage</p>
+                            title="Selon votre goût soins du corp épilations massage hamman bronzage">.
+                    </p>
                     <p class="text-center policesnippet">
-                        <h2 class="policesnippet text-center">300 m2 dédiés à la beauté, la détente et au bien-être du
+                        Selon votre goût : soins du corps épilations massage hamman
+                        bronzage
+                    </p>
+                    <p class="text-center policesnippet">
+                        <h2 class="policesnippet text-center">
+                            300 m2 dédiés à la beauté, la détente et au bien-être du
                             corps et de
-                            l'esprit.</h2>
+                            l'esprit.
+                        </h2>
                     </p>
                     <p class="text-center policesnippet">
                         Dans un cadre magique et spacieux face à la mer il est un univers...où
@@ -300,7 +295,6 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                             title="Soins : Mary Cohr" />
                     </div>
                 </div>
-
             </main>
             <footer>
                 <div class="container text-center">
@@ -342,12 +336,13 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                         <hr class="clearfix w-100 d-md-none">
                         <div class="col-md-3 mx-auto">
                             <h5 class="font-weight-bold text-uppercase mt-3 mb-4 h4">CONTACT</h5>
-
                             <ul class="list-unstyled couleurbleu">
                                 <li>
-                                    <p class="policesnippet2">Par Téléphone <br>
+                                    <p class="policesnippet2">
+                                        Par Téléphone <br>
                                         <a href="tel:+33494493653" class="linkStyle2"
-                                            title="Notre téléphone">04.94.49.36.53</a></p>
+                                            title="Notre téléphone">04.94.49.36.53</a>
+                                    </p>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/Zen-ET-Beaute-246867908832349/"><img
@@ -375,14 +370,18 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                             <h5 class="font-weight-bold text-uppercase mt-3 mb-4 h4">Heure D'Ouverture</h5>
                             <ul class="list-unstyled couleurbleu">
                                 <li>
-                                    <p class="policesnippet2">Heure D'été <br> Du Lundi Au Vendredi <br>
+                                    <p class="policesnippet2">
+                                        Heure D'été <br> Du Lundi Au Vendredi <br>
                                         De 09H00 à 19H00 <br>
-                                        & Le Samedi De 09H00 à 18H00 </p>
+                                        & Le Samedi De 09H00 à 18H00
+                                    </p>
                                 </li>
                                 <li>
-                                    <p class="policesnippet2">Heure D'hiver <br> Du Lundi Au Vendredi <br>
+                                    <p class="policesnippet2">
+                                        Heure D'hiver <br> Du Lundi Au Vendredi <br>
                                         De 10H00 à 18H30 <br>
-                                        & Le Samedi De 10H00 à 18H00 </p>
+                                        & Le Samedi De 10H00 à 18H00
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -394,21 +393,24 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
                                 <img class="logofooter mt-4" src="./img/devanture.JPG"
                                     alt="Zen et Beauté 83120 Sainte-Maxime" title="Nous situer">
                             </a>
-                            <p class="policesnippet2">Palais de "L'ARBOIS"<br>
+                            <p class="policesnippet2">
+                                Palais de "L'ARBOIS"<br>
                                 22 av. du Général Leclerc<br>
-                                83120 Sainte-Maxime</p>
+                                83120 Sainte-Maxime
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="text-center py-3 policesnippet2">© 2019 WebForce3 Team : ['Romain'], ['Joseph'], ['Enguerrand']
-                        <a href="{{ route('gate') }}"><i style="color:orange" class="fas fa-user-cog"></i></a>
-
+                <div class="text-center py-3 policesnippet2">© 2019 WebForce3 Team : <a target="_blank" href="https://www.linkedin.com/in/romain-verwaerde/"><i class="fab fa-linkedin"></i>Romain </a> |
+                    <a target="_blank" href="https://www.linkedin.com/in/joseph-astor/"><i class="fab fa-linkedin"></i>
+                        Joseph </a> |
+                    <a target="_blank" href="https://www.linkedin.com/in/enguerrand-louis-1927b4127/"><i class="fab fa-linkedin"></i>
+                        Enguerrand</a>
+                        <a class="ml-5" href="{{ route('gate') }}"><i style="color:orange" class="fas fa-user-cog"></i></a>
                 </div>
             </footer>
         </div>
     </div>
-
-
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
@@ -421,7 +423,5 @@ $des = "Zen et beaut&eacute; sainte-maxime face &agrave; la mer &agrave;, 300 m2
     <!-- import pour les cartes animées -->
     <script src="{{ asset('js/vue.js') }}"></script>
     <script src="{{ asset('js/cards.js') }}"></script>
-
 </body>
-
 </html>

@@ -5,9 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ServiceRequest;
 use App\Modeles\Categorie;
-use Illuminate\Http\Request;
 use App\Modeles\Service;
-use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller
 {
@@ -63,7 +61,9 @@ class AdminController extends Controller
 
         $category = Categorie::find($data['categorie_id']);
 
-        return redirect()->route('admin.show', ['slug' => $category->slug])->with('message', 'Votre service à bien était modifier');
+        return redirect()->route('admin.show', ['slug' => $category->slug])
+            ->with('message', 'Votre service à bien était modifier')
+            ->with('status', 'alert-success');
     }
 
 
@@ -73,7 +73,8 @@ class AdminController extends Controller
         $category = Categorie::find($service->categorie->id);
         $service->delete();
 
-        return redirect()->route('admin.show', ['slug' => $category->slug])->with('message', 'Votre service à bien était supprimer');
+        return redirect()->route('admin.show', ['slug' => $category->slug])->with('message', 'Votre service à bien était supprimer')
+        ->with('status', 'alert-danger');
     }
 
     public function store(ServiceRequest $request)
@@ -89,8 +90,7 @@ class AdminController extends Controller
         $service->save();
 
         $category = Categorie::find($data['categorie_id']);
-        return redirect()->route('admin.show', ['slug' => $category->slug])->with('message', 'Votre service à bien était envoyer');
 
-
+        return redirect()->route('admin.show', ['slug' => $category->slug])->with('message', 'Votre service à bien était créé');
     }
 }
